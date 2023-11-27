@@ -1,0 +1,11 @@
+#External {
+      color: green;
+}
+
+#Internal_External {
+      color: rgb(4, 4, 4);
+}
+
+.int_inline_ext {
+      color: green;
+}
