@@ -1,0 +1,57 @@
+<!--question 1. Create a simple page with some div tags and show different ways to add CSS as well as what happens
+when you target the same elements with inline, internal, and external CSS. Also, utilize comments in the
+project where required.-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CSS</title>
+      <style>
+            .css {
+                  color: brown;
+            }
+
+
+
+            #Inline_and_internal {
+                  color: black;
+            }
+
+
+            #Internal_External {
+                  color: pink;
+            }
+
+            .int_inline_ext {
+                  color: blanchedalmond;
+            }
+      </style>
+      <link rel="stylesheet" href="question.css"> <!--linking of external css is done-->
+</head>
+
+<body>
+      <div>
+            <h1 style="color: aqua;"> Inline CSS</h1>
+      </div>
+      <div>
+            <h1 class="css"> Internal</h1>
+      </div>
+      <div>
+            <h1 id="External"> External</h1>
+      </div>
+      <div>
+            <h1 style="color: yellow;" id="Inline_and_internal">Inline and Internal</h1>
+      </div>
+      <div>
+            <h1 id="Internal_External">Internal and External</h1>
+      </div>
+      <div>
+            <h1 style="color: blue;" class="int_inline_ext">Inline internal & External</h1>
+      </div>
+
+</body>
+
+</html>
