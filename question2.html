@@ -1,0 +1,70 @@
+<!--Build an HTML page with multiple paragraphs, each assigned a unique class name. Write CSS rules using
+class selectors to apply distinct styling to each paragraph. Follow the BEM naming convention and
+explain how you've named the classes.-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Question 2</title>
+      <style>
+            .Main__Heading
+            {
+                  color: black ;
+            }
+            .Main__SubHeading{
+                  color: grey;
+            }
+            .BEM
+            {
+                  color: green;
+            }
+            .BEM__Rules--NamingConvention
+            {
+                  color: red;
+            }
+            .BEM__Rules--Independent
+            {
+                  color:  red;
+            }
+            .BEM__Rules--Nesting
+            {
+                  color: red;
+            }
+
+      </style>
+</head>
+
+<body>
+      <div class="Main">
+            <h1 class="Main__Heading">Bem</h1>
+            <h3 class="Main__SubHeading">Description & Rules for Bem are as follow:-</h3>
+      </div>
+
+      <div class="BEM">
+            <p class="BEM__Description">The Block, Element, Modifier methodology (commonly referred to as BEM) is a
+                  popular naming convention for classes in HTML and CSS. Developed by the team at Yandex, its goal is to
+                  help developers better understand the relationship between the HTML and CSS in a given project.</p>
+
+            <p class="BEM__Block">The class name for a block is all lowercase and hyphen-separated (e.g., button).</p>
+            <p class="BEM__Element">The class name for an element is separated from the block name by two underscores
+                  (e.g., button__text).</p>
+            <p class="BEM__Modifier">The class name for a modifier is separated from the block or element name by two
+                  hyphens (e.g., button--disabled or button__text--bold).</p>
+
+      </div>
+
+      <div class="BEM_Rules">
+            <p class="BEM__Rules--NamingConvention">Use meaningful and descriptive names for blocks, elements, and
+                  modifiers.
+                  <br>Avoid using IDs for styling.
+            </p>
+            <p class="BEM__Rules--Independent">Blocks should be independent and not rely on the structure of other
+                  blocks.</p>
+            <p class="BEM__Rules--Nesting">Avoid deep nesting of selectors to prevent specificity issues. Each selector
+                  should be as low in specificity as possible.</p>
+      </div>
+</body>
+
+</html>
