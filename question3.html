@@ -1,0 +1,81 @@
+<!--3. Develop an HTML form with various input elements. Use CSS to style the form, including setting
+background colors for input fields. create a custom color palette for the form elements, and demonstrate
+how to apply opacity to one of the form sections.-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Form</title>
+      <style>
+            .FirstName {
+                  background-color: rgb(103, 235, 167);
+            }
+
+            .LastName {
+                  background-color: aqua;
+            }
+
+            .email {
+                  background-color: yellowgreen;
+            }
+
+            .password,
+            .password__Confirm {
+                  background-color: red;
+            }
+
+            .Age {
+                  background-color: blueviolet;
+            }
+
+            .button {
+                  opacity: 60%;
+            }
+      </style>
+</head>
+
+<body>
+      <h1 class="Heading">Registration Form</h1>
+      <form>
+            <label for="First Name">First Name:</label>
+            <input type="text" name="First Name" placeholder="Varun" required id="First Name" class="FirstName"
+                  minlength="3">
+            <br>
+            <label for="Last Name">Last Name:</label>
+            <input type="text" name="Last Name" id="Last Name" placeholder="Kumar" class="LastName" required
+                  minlength="3">
+            <br>
+            <label for="Email ID">Email ID:</label>
+            <input type="email" name="Email ID" id="Email ID" placeholder="abc@xyz.com" class="email" required>
+            <br>
+            <label for="Password">Password</label>
+            <input type="password" name="Password" id="Password" class="password" required placeholder="Password"
+                  minlength="8">
+            <br>
+            <label for="Confirm Password">Confirm Password</label>
+            <input type="password" name="Confirm Password" id="Confirm Password" class="password__Confirm" required
+                  placeholder="Confirm Password" minlength="8">
+            <br>
+            <label for="Age">Age</label>
+            <input type="number" id="Age" name="Age" class="Age" required placeholder="Age" min="18">
+            <br>
+            <label for="Gender">Gender:</label>
+            <input type="radio" name="Gender" id="Male" required class="Gender" placeholder="Male">
+            <label for="Male">Male</label>
+            <input type="radio" name="Gender" id="Female" required class="Gender" placeholder="Female">
+            <label for="Female">Female</label>
+            <input type="radio" name="Gender" id="Other" required class="Gender" placeholder="Other">
+            <label for="Other">Other</label>
+            <br>
+            <label for="Terms">Terms : </label>
+            <input type="checkbox" name="Terms" id="Terms" class="Terms" required placeholder="Terms">
+            <label for="Terms">I agree to terms and conditions</label>
+            <br>
+            <input type="button" value="Register" class="button">
+      </form>
+</body>
+
+</html>
